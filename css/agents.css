@@ -1,0 +1,39 @@
+/* agents.css : agent profile cards */
+.agent-grid { 
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); 
+     gap: 20px; 
+    }
+.agent-card { 
+    background: var(--white); 
+    border-radius: var(--radius); 
+    box-shadow: var(--shadow); 
+    padding: 22px; 
+    text-align: center; 
+    transition: 0.2s; 
+}
+.agent-card:hover { 
+    transform: translateY(-4px); 
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); 
+}
+.avatar { 
+    width: 76px; 
+    height: 76px; border-radius: 50%; 
+    background: var(--primary); 
+    color: #fff; 
+    font-size: 26px; 
+    font-weight: bold; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin: 0 auto 12px; 
+}
+.agent-card p { 
+    font-size: 14px; 
+    color: var(--muted); 
+}
+.agent-card .highlight {
+     color: var(--dark); 
+     font-weight: bold; 
+     margin-top: 8px; 
+}

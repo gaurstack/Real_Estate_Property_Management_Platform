@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visits | EstateHub</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/visits.css">
+</head>
+<body>
+<div class="layout">
+
+  <aside class="sidebar">
+    <h2 class="logo">🏠 EstateHub</h2>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="properties.html">Properties</a>
+      <a href="agents.html">Agents</a>
+      <a href="customers.html">Customers</a>
+      <a href="inquiries.html">Inquiries</a>
+      <a href="visits.html" class="active">Visits</a>
+      <a href="listings.html">Listings</a>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    <header class="topbar">
+      <h1>Property Visits</h1>
+      <span class="user">👤 Admin</span>
+    </header>
+
+    <form class="toolbar">
+      <input type="search" placeholder="Search visits...">
+      <button type="button" class="btn">+ Schedule Visit</button>
+    </form>
+
+    <!-- Upcoming visits -->
+    <section class="upcoming-visits">
+      <h2>Upcoming Visits</h2>
+      <div class="upcoming-list">
+        <article class="visit-card"><p class="visit-date">25 Sep 2026 • 11:00 AM</p><h3>Luxury Villa</h3><p class="muted">Ananya Gupta with Rohan Mehta</p></article>
+        <article class="visit-card"><p class="visit-date">26 Sep 2026 • 04:00 PM</p><h3>Modern Apartment</h3><p class="muted">Vikram Singh with Priya Sharma</p></article>
+        <article class="visit-card"><p class="visit-date">28 Sep 2026 • 10:30 AM</p><h3>Premium Penthouse</h3><p class="muted">Sneha Iyer with Rohan Mehta</p></article>
+      </div>
+    </section>
+
+    <!-- Visit table -->
+    <section class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Visit ID</th><th>Customer</th><th>Property</th><th>Agent</th><th>Date</th><th>Time</th><th>Location</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>V-201</td><td>Ananya Gupta</td><td>Luxury Villa</td><td>Rohan Mehta</td><td>25 Sep 2026</td><td>11:00 AM</td><td>Gurugram</td><td><span class="badge scheduled">Scheduled</span></td></tr>
+          <tr><td>V-202</td><td>Vikram Singh</td><td>Modern Apartment</td><td>Priya Sharma</td><td>26 Sep 2026</td><td>04:00 PM</td><td>Noida</td><td><span class="badge pending">Pending</span></td></tr>
+          <tr><td>V-203</td><td>Sneha Iyer</td><td>Premium Penthouse</td><td>Rohan Mehta</td><td>28 Sep 2026</td><td>10:30 AM</td><td>Pune</td><td><span class="badge scheduled">Scheduled</span></td></tr>
+          <tr><td>V-204</td><td>Rahul Nair</td><td>Commercial Office</td><td>Neha Kapoor</td><td>15 Sep 2026</td><td>02:00 PM</td><td>Mumbai</td><td><span class="badge completed">Completed</span></td></tr>
+          <tr><td>V-205</td><td>Pooja Desai</td><td>Residential Plot</td><td>Amit Verma</td><td>18 Sep 2026</td><td>09:00 AM</td><td>Agra</td><td><span class="badge cancelled">Cancelled</span></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer>© 2026 EstateHub | College Project – HTML &amp; CSS Phase</footer>
+  </main>
+</div>
+</body>
+</html>

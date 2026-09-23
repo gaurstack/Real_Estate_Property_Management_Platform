@@ -1,0 +1,22 @@
+/* visits.css : upcoming visit cards */
+.upcoming-list { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+    gap: 16px; 
+}
+.visit-card { 
+    background: var(--white); 
+    padding: 16px; 
+    border-radius: var(--radius); 
+    box-shadow: var(--shadow); 
+    border-left: 4px solid #16a34a; 
+    transition: 0.2s; 
+}
+.visit-card:hover { 
+    transform: translateY(-4px); 
+}
+.visit-date { 
+    font-weight: bold; 
+    color: var(--primary); 
+    font-size: 14px; 
+}
